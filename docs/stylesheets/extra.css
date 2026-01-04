@@ -1,0 +1,9 @@
+/* Hides the theme credits in the footer */
+footer .text-muted-foreground.text-xs {
+    display: none !important;
+}
+
+/* Or target the specific link if the above is too broad */
+footer a[href*="asiffer"] {
+    display: none !important;
+}

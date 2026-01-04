@@ -1,0 +1,53 @@
+site_name: docs.snawf.my.id
+site_description: Official documentation for snawf.my.id
+site_url: https://docs.snawf.my.id
+repo_url: https://github.com/onthecouch/docs.snawf.my.id
+repo_name: docs.snawf.my.id
+
+# 1. THEME SETTINGS
+theme:
+  name: shadcn
+  show_title: true
+  show_stargazers: false
+  pygments_style: 
+    light: shadcn-light
+    dark: github-dark
+  icon: streamline-ultimate:space-rocket-earth
+  favicon: assets/hdfav60.png
+  topbar_sections: false # NEW!
+  katex_options: # optional
+    macros: # example of macros
+      "\\RR": "\\mathbb{R}" 
+      "\\dx": "\\mathrm{d}x"
+  show_datetime: false   
+
+# 2. NAVIGATION
+nav:
+  - Home: index.md
+  
+  - Home Lab:
+      - Initial Setup: homelab/installation.md
+      - Post Install: homelab/post-install.md
+      - AdGuard Home Server: homelab/adguard-home.md
+      - Hardening Adguard: homelab/hardening-adguard.md
+      - Nginx Proxy Manager: homelab/nmp.md
+      - Cloudflare Tunnel: homelab/cloudflared.md
+
+  - Windows:
+      - Customizing PowerShell: windows/custom-powershell.md
+
+
+# 3. PLUGINS
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - fenced_code
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+  - pymdownx.details
+  - pymdownx.snippets
+extra_css:
+  - stylesheets/extra.css  
