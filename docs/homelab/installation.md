@@ -28,7 +28,8 @@
 2. **EULA:** Accept the license agreement.
 3. **Target Disk:** Select the drive to install OS on.
 
-<p class="callout warning">**Warning:** This drive will be completely wiped!</p>
+!!! warning "Warning:"
+    **Warning:** This drive will be completely wiped!
 
 1. **Country/Time:** Set your Location and Time Zone.
 2. **Credentials:** Set the `root` password and a valid email address (for system alerts).
