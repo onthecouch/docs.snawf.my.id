@@ -48,8 +48,8 @@ Once the installation finishes, the system will reboot. Remove the USB drive.
 - Note the IP address shown on the screen (e.g., `https://10.10.10.1:8006`).
 - Open a web browser on another computer and navigate to that URL.
     
-    
-    - *Note: You will get an SSL Security Warning. This is normal (self-signed certificate). Click "Advanced" -&gt; "Proceed Unsafe".*
+!!! info "Information:"
+    You will get an SSL Security Warning. This is normal (self-signed certificate). Click "Advanced" -&gt; "Proceed Unsafe".
 - **Login:**
     
     
