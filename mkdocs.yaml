@@ -28,9 +28,9 @@ nav:
   - Home Lab:
       - Initial Setup: homelab/installation.md
       - Post Install: homelab/post-install.md
-      - AdGuard Home Server: homelab/adguard-home.md
+      - AdGuard Home Setup: homelab/adguard-home.md
       - Hardening Adguard: homelab/hardening-adguard.md
-      - Nginx Proxy Manager: homelab/nmp.md
+      - Nginx Proxy Manager Setup: homelab/nmp.md
       - Cloudflare Tunnel: homelab/cloudflared.md
 
   - Windows:
