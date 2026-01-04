@@ -6,9 +6,13 @@ Transform AdGuard Home from a simple ad-blocker into a network security applianc
 A common mistake is just enabling one massive list and hoping for the best. My configuration uses a **layered approach**. Instead of relying on one source, I use specialized lists that target specific types of threats.
 
 The lists selected in this configuration fall into four categories:
+
 1.  **The Baseline:** General ads and trackers.
+
 2.  **The Heavy Lifter:** A curated, high-quality "pro" list that does most of the work.
+
 3.  **Security & Malware:** Targeted lists specifically for known malicious infrastructure.
+
 4.  **Privacy & Targeted:** Specialized lists for telemetry, link shorteners, and regional content.
 
 
