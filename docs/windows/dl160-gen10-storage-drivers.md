@@ -20,9 +20,9 @@ Since Server 2025 is brand new, HP hasn't listed specific drivers for it in thei
     Don't make the mistake I did and download the "P-series" or "E-series" drivers. Those are for the physical RAID cards.
 
 For the onboard RAID, we need the **S100i** driver:
-1.  Driver download link: **[HPE Smart Array S100i SR Gen10 SW RAID Driver for Windows Server 2022](https://support.hpe.com/connect/s/softwaredetails?language=en_US&collectionId=MTX-09fdb681b4924b89&tab=releaseNotes)**.
 
-2.  Download the **cp052316.exe(1.6 MB)**
+1. **Download Link:** [HPE Smart Array S100i SW RAID Driver (Server 2022)](https://support.hpe.com/connect/s/softwaredetails?language=en_US&collectionId=MTX-09fdb681b4924b89&tab=releaseNotes)
+2. **File Name:** `cp052316.exe` (1.6 MB)
 
 ### Step 2: How - to inject
 !!! danger "Crucial:"
