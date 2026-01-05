@@ -25,7 +25,7 @@ For the onboard RAID, we need the **S100i** driver:
 2. **File Name:** `cp052316.exe` (1.6 MB)
 
 ### Step 2: How - to inject
-!!! danger "Crucial:"
+!!! danger "Note:"
     You cannot just dump the `.exe` on the USB. The Windows installer ignores executables.
 
 1.  Run the `cp052316.exe` (1.6 MB) on your laptop.
