@@ -17,7 +17,7 @@ Since Server 2025 is brand new, HP hasn't listed specific drivers for it in thei
 
 ### Step 1: Download the Correct Driver
 !!! note "Note:"
-Don't make the mistake I did and download the "P-series" or "E-series" drivers. Those are for the physical RAID cards.
+    Don't make the mistake I did and download the "P-series" or "E-series" drivers. Those are for the physical RAID cards.
 
 For the onboard RAID, we need the **S100i** driver:
 1.  Driver download link: **[HPE Smart Array S100i SR Gen10 SW RAID Driver for Windows Server 2022](https://support.hpe.com/connect/s/softwaredetails?language=en_US&collectionId=MTX-09fdb681b4924b89&tab=releaseNotes)**. 
@@ -25,7 +25,7 @@ For the onboard RAID, we need the **S100i** driver:
 
 ### Step 2: How - to inject
 !!! danger "Crucial:"
-You cannot just dump the `.exe` on the USB. The Windows installer ignores executables.
+    You cannot just dump the `.exe` on the USB. The Windows installer ignores executables.
 
 1.  Run the **cp052316.exe(1.6 MB)** on your laptop.
 2.  **Do not click Install.** Click the **Extract** button.
@@ -44,4 +44,4 @@ The list refreshed immediately after this, showing the RAID array. Proceed the i
 ## Troubleshooting / Sanity Checks
 * **BIOS Mode:** If the driver loads but the list is still empty, check the BIOS (F9). Go to **System Options > Storage** and ensure the controller is set to **"Smart Array SW RAID Support"**. If it was somehow set to "AHCI," the driver won't work.
 * **Intelligent Provisioning:** If you try to use F10 to automate this and it hangs, don't wait for it. Just hard reboot and use the manual method above. It's faster than troubleshooting the IP network stack.
-* **Never use old server in your company**
+* **Never use old server in your company.**
