@@ -28,7 +28,7 @@ For the onboard RAID, we need the **S100i** driver:
 !!! danger "Crucial:"
     You cannot just dump the `.exe` on the USB. The Windows installer ignores executables.
 
-1.  Run the `cp052316.exe(1.6 MB)` on your laptop.
+1.  Run the `cp052316.exe` (1.6 MB) on your laptop.
 2.  **Do not click Install.** Click the **Extract** button.
 3.  Dump the files into a folder named something obvious like `S100i_Drivers`.
 4.  Copy that folder to your USB stick.
