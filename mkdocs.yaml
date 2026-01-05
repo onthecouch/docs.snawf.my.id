@@ -35,7 +35,7 @@ nav:
 
   - Windows:
       - Customizing PowerShell: windows/custom-powershell.md
-
+      - DL160 Gen10 Storage Drivers: windows/dl160-gen10-storage-drivers.md
 
 # 3. PLUGINS
 plugins:
