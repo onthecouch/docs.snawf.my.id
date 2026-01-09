@@ -1,0 +1,58 @@
+:root {
+  --md-typeset-font-size: 0.6875rem; /* 11px */
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b0c0f;
+  --md-default-fg-color: #e8eaed;
+  --md-default-fg-color--light: #9aa0a6;
+  --md-code-bg-color: #16181d;
+  --md-code-fg-color: #e6e8eb;
+  --md-code-hl-color: #22262d;
+}
+
+.md-typeset {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--md-typeset-font-size);
+  line-height: 1.35;       /* tighter lines */
+  margin-bottom: 0.6em;    /* smaller paragraph spacing */
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  font-size: inherit;
+  margin-bottom: 0.6em;
+}
+
+.md-typeset a {
+  color: #8ab4f8;
+}
+.md-typeset a:hover {
+  color: #aecbfa;
+}
+
+/* Inline code */
+.md-typeset code:not(pre code) {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;        /* revert to standard ~11px */
+  background-color: #1b1e24;
+  color: #e6e8eb;
+  border-radius: 3px;
+  padding: 0.1em 0.2em;
+}
+
+.md-typeset pre {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;        
+  line-height: 1.5;
+  background-color: #16181d; 
+  color: #e6e8eb;
+  padding: 1em;             
+  border-radius: 4px;
+  overflow-x: auto;
+  position: relative;     
+}
+
+.md-typeset h1 { font-size: 1.5em; margin-bottom: 0.5em; }
+.md-typeset h2 { font-size: 1.35em; margin-bottom: 0.4em; }
+.md-typeset h3 { font-size: 1.1em; margin-bottom: 0.3em; }

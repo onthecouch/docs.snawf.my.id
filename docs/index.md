@@ -6,12 +6,20 @@ hide:
 
 # docs.snawf.my.id
 
-This site serves as a personal documentation archive for infrastructure, system configuration, and operational decisions I have made over time. It exists primarily as a long-term reference rather than a tutorial, with the assumption that the reader is either myself in the future or someone already familiar with the underlying technologies.
+This site is my personal documentation space. I use it to keep track of system setups, configuration decisions, and infrastructure work I’ve done over time. It’s not meant to be a tutorial or a polished guide — it’s primarily a long-term reference for myself, written with the assumption that future-me already understands the basics but needs the details.
 
-A significant portion of this documentation focuses on my homelab environment, which is built around Proxmox as the primary virtualization platform. This includes notes on initial host setup, virtual machine and container layout, networking decisions, DNS configuration, reverse proxying, and general service hardening. The emphasis is on practical implementation details and trade-offs rather than theoretical explanations.
+Most of the content here comes from things I actively run, maintain, or have broken and fixed more than once. The focus is on *what* I set up, *how* it’s configured, and *why* certain decisions were made at the time.
 
-In addition to the homelab, this documentation also covers aspects of my daily Windows environment. These notes typically relate to PowerShell customization, development and administrative tooling, and hardware- or driver-specific issues encountered on workstation or server-class systems. The goal here is to capture solutions to problems that are easy to forget but time-consuming to rediscover.
+## Homelab
 
-Finally, the documentation includes references to workloads and services running in Oracle Cloud. This covers lightweight production or semi-production setups, connectivity between cloud and on-prem environments, and configuration choices made to balance cost, reliability, and simplicity. These sections are intended to document what was deployed, how it was configured, and why certain decisions were made at the time.
+A large part of this documentation revolves around my homelab environment, built primarily on Proxmox. These notes cover initial host setup, virtual machines and containers, networking and DNS decisions, reverse proxies, tunneling, and general service hardening. The emphasis is on real-world configuration and trade-offs rather than theory.
 
-Overall, this site functions as a written record of systems I operate and maintain, optimized for recall and continuity rather than presentation.
+## Windows
+
+This section documents my daily Windows environment. Most of it is practical, experience-driven stuff: PowerShell customization, tooling setup, quality-of-life tweaks, and fixes for hardware or driver issues that are annoying to troubleshoot more than once. If I had to dig for a solution, it probably ended up here.
+
+## Oracle Cloud
+
+I also keep notes on workloads running in Oracle Cloud. These are usually lightweight deployments tied back to on-prem systems or used for specific purposes. The focus here is on basic architecture, connectivity, and configuration choices aimed at keeping things simple, reliable, and cost-effective.
+
+Overall, this site acts as a written record of systems I operate and maintain — optimized for recall and continuity, not presentation.

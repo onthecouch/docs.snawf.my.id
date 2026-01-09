@@ -1,18 +1,14 @@
-**Goal:** This page covers the preparation and step-by-step installation of Proxmox VE on bare metal hardware.
+### 1. Hardware Check
 
-### 1. Hardware &amp; Prep Prerequisites
-
-*Before starting, ensure the hardware is ready.*
-
-- **Download ISO:** Latest Proxmox VE ISO from [proxmox.com](https://www.proxmox.com/en/downloads).
-- **Create Boot Media:** Flash ISO to USB (using Rufus or Etcher).
-- **Network Info:** Have a static IP address picked out (Proxmox *needs* a static IP).
+1. **Download ISO:** [proxmox.com](https://www.proxmox.com/en/downloads).
+2. **Create Boot Media:** Flash ISO to USB (using Rufus or Etcher).
+3. **Network Info:** Have a static IP
     
-    
-    - *IP:* `10.10.10.1`
+    - *IP:* `10.10.10.10`
     - *Gateway:* `10.10.10.1`
     - *DNS:* `1.1.1.1` or `8.8.8.8` (or your local router).
-- **Hardware Check:** Verify CPU supports Virtualization (Intel VT-x / AMD-V).
+
+4. **Hardware Check:** Verify CPU supports Virtualization (Intel VT-x / AMD-V).
 
 ### 2. BIOS/UEFI Settings
 
@@ -31,7 +27,7 @@
 !!! warning "Warning:"
     This drive will be completely wiped!
 
-1. **Country/Time:** Set your Location and Time Zone.
+1. **Country/Time:** Set Location and Time Zone.
 2. **Credentials:** Set the `root` password and a valid email address (for system alerts).
 3. **Network Configuration:**
     
@@ -44,15 +40,17 @@
 
 Once the installation finishes, the system will reboot. Remove the USB drive.
 
-- Wait for the command line login screen to appear.
-- Note the IP address shown on the screen (e.g., `https://10.10.10.1:8006`).
-- Open a web browser on another computer and navigate to that URL.
-    
-!!! info "Information:"
-    You will get an SSL Security Warning. This is normal (self-signed certificate). Click "Advanced" -&gt; "Proceed Unsafe".
-- **Login:**
-    
-    
+1. Wait for the command line login screen to appear.
+2. Note the IP address shown on the screen (e.g., `https://10.10.10.10:8006`).
+3. Open a web browser on another computer and navigate to that URL.
+
+    !!! info "Information"
+        You will get an SSL security warning. This is normal (self-signed certificate).
+        Click **Advanced** → **Proceed (unsafe)**.
+
+4. **Login using the following details:**
+
     - **User:** `root`
-    - **Password:** (The one you set in Step 5)
+    - **Password:** The one set during installation
     - **Realm:** Linux PAM standard authentication
+
