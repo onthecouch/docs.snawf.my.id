@@ -1,5 +1,4 @@
 mkdocs
 mkdocs-material
-mkdocs-shadcn
 pygments
 pymdown-extensions

@@ -4,40 +4,42 @@ site_url: https://docs.snawf.my.id
 repo_url: https://github.com/onthecouch/docs.snawf.my.id
 repo_name: docs.snawf.my.id
 
-# 1. THEME SETTINGS
-theme:
-  name: shadcn
-  show_title: true
-  show_stargazers: false
-  pygments_style: 
-    light: shadcn-light
-    dark: github-dark
-  icon: streamline-ultimate:space-rocket-earth
-  favicon: assets/hdfav60.png
-  topbar_sections: false # NEW!
-  katex_options: # optional
-    macros: # example of macros
-      "\\RR": "\\mathbb{R}" 
-      "\\dx": "\\mathrm{d}x"
-  show_datetime: false   
-
-# 2. NAVIGATION
 nav:
   - Home: index.md
-  
-  - Home Lab:
+  - Homelab:
       - Initial Setup: homelab/installation.md
       - Post Install: homelab/post-install.md
-      - AdGuard Home Setup: homelab/adguard-home.md
-      - Hardening Adguard: homelab/hardening-adguard.md
-      - Nginx Proxy Manager Setup: homelab/nmp.md
-      - Cloudflare Tunnel: homelab/cloudflared.md
-
+      - AdGuard Home: homelab/adguard-home.md
+      - Hardening AdGuard: homelab/hardening-adguard.md
+      - Nginx Proxy Manager: homelab/nmp.md
+      - Cloudflared: homelab/cloudflared.md
   - Windows:
-      - Customizing PowerShell: windows/custom-powershell.md
-      - DL160 Gen10 HDD Drivers: windows/dl160-gen10-storage-drivers.md
+      - Customizing Powershell: windows/custom-powershell.md
+      - HP DL 160 HDD Driver: windows/dl160-gen10-storage-drivers.md
 
-# 3. PLUGINS
+theme:
+  name: material
+  language: en
+  favicon: assets/hdfav60.png
+
+  palette:
+    scheme: slate
+    primary: black
+    accent: deep orange
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - content.code.copy
+    - navigation.sections
+    - navigation.expand
+
+  hide:
+    - toc
+
 plugins:
   - search
 
@@ -49,5 +51,15 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.details
   - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 extra_css:
-  - stylesheets/extra.css  
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+
+copyright:
+  Copyright © 2016–2026 Henry Dennis

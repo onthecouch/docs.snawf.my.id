@@ -1,11 +1,17 @@
-# Welcome to my Docs
+---
+hide:
+  - navigation
+  - toc
+---
 
-This is where I keep track of my setups, configurations, and the random technical hurdles I’ve managed to clear. I built this site mostly as a second brain for myself—if I don't write it down, I'll definitely forget how I fixed it.
+# docs.snawf.my.id
 
-### What’s in here?
+This site serves as a personal documentation archive for infrastructure, system configuration, and operational decisions I have made over time. It exists primarily as a long-term reference rather than a tutorial, with the assumption that the reader is either myself in the future or someone already familiar with the underlying technologies.
 
-* **Homelab (Proxmox):** This is where I document my home server experiments. It covers everything from the initial node setup to repository tweaks and getting services running smoothly.
-* **Windows:** These are the specific configurations and fixes I encounter at my desk. It’s mostly environment tweaks, and resolving those annoying little issues that pop up in a professional Windows environment.
-* **DevOps Tools:** A collection of notes on the tools I use daily, like VS Code and various CLI utilities, to keep my workflow from falling apart.
+A significant portion of this documentation focuses on my homelab environment, which is built around Proxmox as the primary virtualization platform. This includes notes on initial host setup, virtual machine and container layout, networking decisions, DNS configuration, reverse proxying, and general service hardening. The emphasis is on practical implementation details and trade-offs rather than theoretical explanations.
 
-Feel free to poke around. Hopefully, some of the notes here save you the same headaches they saved me.
+In addition to the homelab, this documentation also covers aspects of my daily Windows environment. These notes typically relate to PowerShell customization, development and administrative tooling, and hardware- or driver-specific issues encountered on workstation or server-class systems. The goal here is to capture solutions to problems that are easy to forget but time-consuming to rediscover.
+
+Finally, the documentation includes references to workloads and services running in Oracle Cloud. This covers lightweight production or semi-production setups, connectivity between cloud and on-prem environments, and configuration choices made to balance cost, reliability, and simplicity. These sections are intended to document what was deployed, how it was configured, and why certain decisions were made at the time.
+
+Overall, this site functions as a written record of systems I operate and maintain, optimized for recall and continuity rather than presentation.
