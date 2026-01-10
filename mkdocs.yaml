@@ -6,13 +6,19 @@ repo_name: docs.snawf.my.id
 
 nav:
   - Home: index.md
+
   - Homelab:
-      - Initial Setup: homelab/installation.md
-      - Post Install: homelab/post-install.md
-      - AdGuard Home: homelab/adguard-home.md
-      - Hardening AdGuard: homelab/hardening-adguard.md
-      - Nginx Proxy Manager: homelab/nmp.md
-      - Cloudflared: homelab/cloudflared.md
+      - Overview: homelab/index.md
+
+      - Proxmox:
+          - Initial Setup: homelab/installation.md
+          - Post Install: homelab/post-install.md
+
+      - Networking & Services:
+          - AdGuard Home: homelab/adguard-home.md
+          - Hardening AdGuard: homelab/hardening-adguard.md
+          - Nginx Proxy Manager: homelab/nmp.md
+          - Cloudflared: homelab/cloudflared.md
   - Windows:
       - Customizing Powershell: windows/custom-powershell.md
       - HP DL 160 HDD Driver: windows/dl160-gen10-storage-drivers.md
