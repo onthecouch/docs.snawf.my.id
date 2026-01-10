@@ -49,6 +49,7 @@ theme:
     - content.code.select
     - navigation.sections
     - navigation.expand
+    - navigation.footer
 
 
 plugins:
