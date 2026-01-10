@@ -11,14 +11,15 @@ nav:
       - Overview: homelab/index.md
 
       - Proxmox:
-          - Initial Setup: homelab/installation.md
-          - Post Install: homelab/post-install.md
+          - Initial Setup: homelab/01.installation.md
+          - Post Install: homelab/02.post-install.md
 
       - Networking & Services:
-          - AdGuard Home: homelab/adguard-home.md
-          - Hardening AdGuard: homelab/hardening-adguard.md
-          - Nginx Proxy Manager: homelab/nmp.md
-          - Cloudflared: homelab/cloudflared.md
+          - AdGuard Home: homelab/03.adguard-home.md
+          - Nginx Proxy Manager: homelab/04.nmp.md
+          - Cloudflared: homelab/05.cloudflared.md
+          - Homepage: homelab/06.dashboard.md
+          - Media Server: homelab/07.media-stack.md
   - Windows:
       - Customizing Powershell: windows/custom-powershell.md
       - HP DL 160 HDD Driver: windows/dl160-gen10-storage-drivers.md
@@ -45,7 +46,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - content.code.copy       # copy-to-clipboard
-    - content.code.line       # line selection toggle
+    - content.code.select
     - navigation.sections
     - navigation.expand
 
@@ -63,13 +64,16 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.details
   - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
-      linenums: true           # show line numbers
-      linenums_style: table
-      anchor_linenums: true    # enable line selection toggle
+      line_spans: __span          
+      pygments_lang_class: true
+      anchor_linenums: true 
+  
 
 extra_css:
   - stylesheets/extra.css
