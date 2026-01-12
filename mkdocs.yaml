@@ -20,6 +20,12 @@ nav:
           - Cloudflared: homelab/05.cloudflared.md
           - Homepage: homelab/06.dashboard.md
           - Media Server: homelab/07.media-stack.md
+  - Oracle Cloud:
+     - Overview: oci/01.index.md
+
+     - Instance:
+          - utils-node-1: oci/02.utils.md
+          - k3s-master: oci/03.k3s-master.md    
   - Windows:
       - Customizing Powershell: windows/custom-powershell.md
       - HP DL 160 HDD Driver: windows/dl160-gen10-storage-drivers.md

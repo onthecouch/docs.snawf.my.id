@@ -4,22 +4,62 @@ hide:
   - toc
 ---
 
-# docs.snawf.my.id
+# System Documentation
 
-This site is my personal documentation space. I use it to keep track of system setups, configuration decisions, and infrastructure work I’ve done over time. It’s not meant to be a tutorial or a polished guide — it’s primarily a long-term reference for myself, written with the assumption that future-me already understands the basics but needs the details.
 
-Most of the content here comes from things I actively run, maintain, or have broken and fixed more than once. The focus is on *what* I set up, *how* it’s configured, and *why* certain decisions were made at the time.
+---
 
-## Homelab
+## 1. Overview
 
-A large part of this documentation revolves around my homelab environment, built primarily on Proxmox. These notes cover initial host setup, virtual machines and containers, networking and DNS decisions, reverse proxies, tunneling, and general service hardening. The emphasis is on real-world configuration and trade-offs rather than theory.
+This sites serves as the authoritative technical reference for the infrastructure. It documents system setups, configuration decisions, and operational procedures.
 
-## Windows
+*   **Objective:** To ensure long-term recall and operational continuity.
 
-This section documents my daily Windows environment. Most of it is practical, experience-driven stuff: PowerShell customization, tooling setup, quality-of-life tweaks, and fixes for hardware or driver issues that are annoying to troubleshoot more than once. If I had to dig for a solution, it probably ended up here.
+*   **Philosophy:** Function over form. The content assumes baseline knowledge and focuses on implementation details, specific configurations, and architectural reasoning.
 
-## Oracle Cloud
+*   **Source:** All documentation is derived from active deployments, real-world troubleshooting, and validated configurations.
 
-I also keep notes on workloads running in Oracle Cloud. These are usually lightweight deployments tied back to on-prem systems or used for specific purposes. The focus here is on basic architecture, connectivity, and configuration choices aimed at keeping things simple, reliable, and cost-effective.
+---
 
-Overall, this site acts as a written record of systems I operate and maintain — optimized for recall and continuity, not presentation.
+## 2. Documentation Scope
+
+Primary areas of coverage within the documentation site.
+
+| Category | Description | Key Technologies |
+| :--- | :--- | :--- |
+| **Homelab** | On-premise infrastructure and virtualization. | Proxmox, LXC, Networking, DNS |
+| **Windows** | Workstation environment and tooling. | PowerShell, Winget, Driver Fixes |
+| **Oracle Cloud** | External cloud resources and hybrid connectivity. | Oracle Free Tier, Ubuntu ARM, Tailscale |
+
+---
+
+## 3. Domain Specifics
+
+### 3.1 Homelab Environment
+Documentation regarding the Proxmox-based private cloud. Content focuses on practical configuration and stability trade-offs rather than theoretical implementation.
+
+*   **Host Management:** Bootstrapping and clustering.
+
+*   **Virtualization:** VM and Container (LXC) provisioning.
+
+*   **Networking:** VLAN segmentation, internal DNS strategies, and tunneling.
+
+*   **Services:** Reverse proxy configuration and service hardening.
+
+### 3.2 Windows Workstation
+Operational notes for the daily driver environment, detailing solutions for hardware idiosyncrasies and workflow optimization.
+
+*   **Automation:** PowerShell profile customization and script management.
+
+*   **Tooling:** Development environment setup and quality-of-life adjustments.
+
+*   **Troubleshooting:** Resolved driver issues and hardware-specific fixes.
+
+### 3.3 Oracle Cloud
+Architectural notes for cloud-hosted workloads, emphasizing cost-effectiveness and reliability.
+
+*   **Infrastructure:** Lightweight deployments on Oracle Free Tier (ARM64).
+
+*   **Connectivity:** Secure bridging to on-premise systems via VPN.
+
+*   **Architecture:** Simple, robust configuration patterns for hybrid operations.
