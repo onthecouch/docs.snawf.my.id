@@ -22,6 +22,7 @@ nav:
           - Media Server: homelab/07.media-stack.md
   - Oracle Cloud:
      - Overview: oci/01.index.md
+     - Always Free Policy: oci/04.oracle-alive.md
 
      - Instance:
           - utils-node-1: oci/02.utils.md
@@ -78,10 +79,19 @@ markdown_extensions:
       line_spans: __span          
       pygments_lang_class: true
       anchor_linenums: true 
-  
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js  
 
 extra:
   generator: false
