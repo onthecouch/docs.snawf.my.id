@@ -1,8 +1,8 @@
 site_name: docs.snawf.my.id
 site_description: Official documentation for snawf.my.id
 site_url: https://docs.snawf.my.id
-repo_url: https://github.com/onthecouch/docs.snawf.my.id
-repo_name: docs.snawf.my.id
+# repo_url: https://github.com/onthecouch/docs.snawf.my.id
+# repo_name: docs.snawf.my.id
 
 # ===== NAVIGATION =====
 nav:
@@ -51,6 +51,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.tracking
     - navigation.instant
     - navigation.instant.progress
     - content.code.copy
@@ -58,7 +59,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.path           # Breadcrumbs
-    - content.action.edit      # Edit button
+    - content.revision.date
 
 # ===== PLUGINS =====
 plugins:
@@ -102,6 +103,8 @@ extra_javascript:
 # ===== MISC CONFIG =====
 extra:
   generator: false
+  git_revision_date_localized: true
+  git_revision_date_localized_format: "%B %d, %Y"
 
 copyright:
   Copyright © 2019–2026 snawf.my.id
