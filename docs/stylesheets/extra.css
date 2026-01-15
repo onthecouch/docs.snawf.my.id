@@ -18,22 +18,14 @@
   --ashbloom-sky: #44BFF1;
   
   /* Text & UI */
-  --ashbloom-text-light: #e8e8e8;
-  --ashbloom-text-gray: #c5c5c5;
-  --ashbloom-text-muted: #8f8f8f;
+  --ashbloom-text-light: #e8e2d0;
+  --ashbloom-text-gray: #c4c2b6;
+  --ashbloom-text-muted: #96958a;
   --ashbloom-border: #35383b;
 }
 
 /* ===== MATERIAL THEME OVERRIDES ===== */
 [data-md-color-scheme="slate"] {
-<<<<<<< HEAD
-  --md-default-bg-color: #0b0c0f;
-  --md-default-fg-color: #e8e2d0;
-  --md-default-fg-color--light: #9aa0a6;
-  --md-code-bg-color: #16181d;
-  --md-code-fg-color: #e8e2d0;
-  --md-code-hl-color: #22262d;
-=======
   /* Base */
   --md-default-bg-color: var(--ashbloom-slate);
   --md-default-fg-color: var(--ashbloom-text-light);
@@ -55,7 +47,6 @@
   
   /* Footer */
   --md-footer-bg-color: var(--ashbloom-charcoal);
->>>>>>> deb23149b7b292e254d7109e5f0641c1c8f0f78f
 }
 
 /* ===== NAVIGATION PALETTE LINE ===== */
