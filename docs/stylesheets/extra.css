@@ -4,10 +4,10 @@
 
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #0b0c0f;
-  --md-default-fg-color: #e8eaed;
+  --md-default-fg-color: #e8e2d0;
   --md-default-fg-color--light: #9aa0a6;
   --md-code-bg-color: #16181d;
-  --md-code-fg-color: #e6e8eb;
+  --md-code-fg-color: #e8e2d0;
   --md-code-hl-color: #22262d;
 }
 
