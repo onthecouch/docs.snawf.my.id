@@ -4,33 +4,34 @@ site_url: https://docs.snawf.my.id
 repo_url: https://github.com/onthecouch/docs.snawf.my.id
 repo_name: docs.snawf.my.id
 
+# ===== NAVIGATION =====
 nav:
   - Home: index.md
 
   - Homelab:
       - Overview: homelab/index.md
-
       - Proxmox:
           - Initial Setup: homelab/01.installation.md
           - Post Install: homelab/02.post-install.md
-
       - Networking & Services:
           - AdGuard Home: homelab/03.adguard-home.md
           - Nginx Proxy Manager: homelab/04.nmp.md
           - Cloudflared: homelab/05.cloudflared.md
           - Homepage: homelab/06.dashboard.md
           - Media Server: homelab/07.media-stack.md
-  - Oracle Cloud:
-     - Overview: oci/01.index.md
-     - Always Free Policy: oci/04.oracle-alive.md
 
-     - Instance:
+  - Oracle Cloud:
+      - Overview: oci/01.index.md
+      - Always Free Policy: oci/04.oracle-alive.md
+      - Instance:
           - utils-node-1: oci/02.utils.md
-          - k3s-master: oci/03.k3s-master.md    
+          - k3s-master: oci/03.k3s-master.md
+
   - Windows:
       - Customizing Powershell: windows/custom-powershell.md
       - HP DL 160 HDD Driver: windows/dl160-gen10-storage-drivers.md
 
+# ===== THEME CONFIGURATION =====
 theme:
   name: material
   language: en
@@ -38,13 +39,13 @@ theme:
   logo: assets/hdfav60.png
 
   font:
-    text: "Work Sans"
-    code: "JetBrains Mono"
+    text: "IBM Plex Sans"
+    code: "IBM Plex Mono"
 
   palette:
     scheme: slate
-    primary: black
-    accent: deep orange
+    primary: '#202124'    # Ashbloom Slate
+    accent: '#c0a952'     # Ashbloom Gold
 
   features:
     - navigation.tabs
@@ -52,15 +53,18 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.instant.progress
-    - content.code.copy       # copy-to-clipboard
+    - content.code.copy
     - content.code.select
     - navigation.sections
     - navigation.expand
+    - navigation.path           # Breadcrumbs
+    - content.action.edit      # Edit button
 
-
+# ===== PLUGINS =====
 plugins:
   - search
 
+# ===== MARKDOWN EXTENSIONS =====
 markdown_extensions:
   - admonition
   - fenced_code
@@ -76,12 +80,14 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
-      line_spans: __span          
+      line_spans: __span
       pygments_lang_class: true
-      anchor_linenums: true 
+      anchor_linenums: true
+      pygments_style: dracula      # Dark theme syntax highlighting
   - pymdownx.arithmatex:
       generic: true
 
+# ===== CUSTOM CSS & JAVASCRIPT =====
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
@@ -91,8 +97,9 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js  
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
+# ===== MISC CONFIG =====
 extra:
   generator: false
 
