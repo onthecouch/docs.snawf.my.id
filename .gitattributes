@@ -1,9 +1,0 @@
-# Force specific file types to be recognized
-*.md linguist-language=Markdown
-*.js linguist-language=JavaScript
-*.css linguist-language=CSS
-*.html linguist-language=HTML
-*.md linguist-documentation=false
-*.md linguist-language=Markdown
-*.yml linguist-language=YAML
-*.json linguist-language=JSON
