@@ -53,7 +53,7 @@ Operational notes for the daily driver environment, detailing solutions for hard
 
 *   **Tooling:** Development environment setup and quality-of-life adjustments.
 
-*   **Troubleshooting:** Resolved driver issues and hardware-specific fixes.
+*   **Troubleshooting:** Resolved driver issues and hardware-specific fix.
 
 ### 3.3 Oracle Cloud
 Architectural notes for cloud-hosted workloads, emphasizing cost-effectiveness and reliability.
