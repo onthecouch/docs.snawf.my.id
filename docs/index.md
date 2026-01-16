@@ -38,7 +38,7 @@ Primary areas of coverage within the documentation site.
 ### 3.1 Homelab Environment
 Documentation regarding the Proxmox-based private cloud. Content focuses on practical configuration and stability trade-offs rather than theoretical implementation.
 
-*   **Host Management:** Bootstrapping and clustering.
+*   **Host Management:** Bootstrapping and clustering. 
 
 *   **Virtualization:** VM and Container (LXC) provisioning.
 
