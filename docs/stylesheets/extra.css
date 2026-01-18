@@ -10,17 +10,17 @@
   --ashbloom-charcoal: #25282b;
   --ashbloom-dark-slate: #2a2d30;
   
-  /* Accents */
-  --ashbloom-gold: #c0a952;
-  --ashbloom-purple: #45379B;
-  --ashbloom-pink: #F6ACB4;
-  --ashbloom-rose: #D65987;
-  --ashbloom-sky: #44BFF1;
+  /* Accents - Updated to Pop Palette */
+  --ashbloom-gold: #F2CD60;
+  --ashbloom-purple: #9E86FF;
+  --ashbloom-pink: #FF9E64;    /* Using Ashbloom Orange */
+  --ashbloom-rose: #F04770;
+  --ashbloom-sky: #3DD6F5;     /* Using Ashbloom Cyan */
   
   /* Text & UI */
   --ashbloom-text-light: #e8e2d0;
   --ashbloom-text-gray: #c4c2b6;
-  --ashbloom-text-muted: #96958a;
+  --ashbloom-text-muted: #55585b;
   --ashbloom-border: #35383b;
 }
 
@@ -38,7 +38,7 @@
   
   /* Accents */
   --md-accent-fg-color: var(--ashbloom-sky);
-  --md-accent-fg-color--transparent: rgba(68, 191, 241, 0.1);
+  --md-accent-fg-color--transparent: rgba(61, 214, 245, 0.1);
   
   /* Code */
   --md-code-bg-color: var(--ashbloom-dark-slate);
@@ -53,11 +53,11 @@
 .md-tabs {
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, 
-    var(--ashbloom-rose),    /* Rose */
-    var(--ashbloom-pink),    /* Pink */
-    var(--ashbloom-gold),    /* Gold */
-    var(--ashbloom-sky),     /* Sky */
-    var(--ashbloom-purple)   /* Purple */
+    var(--ashbloom-rose),    /* #F04770 */
+    var(--ashbloom-pink),    /* #FF9E64 (Orange) */
+    var(--ashbloom-gold),    /* #F2CD60 */
+    var(--ashbloom-sky),     /* #3DD6F5 (Cyan) */
+    var(--ashbloom-purple)   /* #9E86FF */
   ) 1;
 }
 
@@ -219,14 +219,14 @@
 .highlight .k,
 .highlight .kd,
 .highlight .kn {
-  color: var(--ashbloom-sky);
+  color: var(--ashbloom-purple);
   font-weight: 500;
 }
 
 .highlight .s,
 .highlight .s1,
 .highlight .s2 {
-  color: var(--ashbloom-pink);
+  color: #6DEcb9; /* Mint Strings */
 }
 
 .highlight .mi,
@@ -237,7 +237,7 @@
 
 .highlight .nf,
 .highlight .na {
-  color: var(--ashbloom-rose);
+  color: var(--ashbloom-sky);
 }
 
 .highlight .c,
@@ -281,7 +281,7 @@
 }
 
 .md-typeset .admonition.note .admonition-title {
-  background-color: rgba(68, 191, 241, 0.1);
+  background-color: rgba(61, 214, 245, 0.1);
   color: var(--ashbloom-sky);
 }
 
@@ -290,7 +290,7 @@
 }
 
 .md-typeset .admonition.warning .admonition-title {
-  background-color: rgba(192, 169, 82, 0.1);
+  background-color: rgba(242, 205, 96, 0.1);
   color: var(--ashbloom-gold);
 }
 
@@ -299,17 +299,17 @@
 }
 
 .md-typeset .admonition.danger .admonition-title {
-  background-color: rgba(214, 89, 135, 0.1);
+  background-color: rgba(240, 71, 112, 0.1);
   color: var(--ashbloom-rose);
 }
 
 .md-typeset .admonition.success {
-  border-left-color: var(--ashbloom-purple);
+  border-left-color: #6DEcb9; /* Mint Success */
 }
 
 .md-typeset .admonition.success .admonition-title {
-  background-color: rgba(69, 55, 155, 0.1);
-  color: var(--ashbloom-purple);
+  background-color: rgba(109, 236, 185, 0.1);
+  color: #6DEcb9;
 }
 
 .md-typeset .admonition.tip {
@@ -317,7 +317,7 @@
 }
 
 .md-typeset .admonition.tip .admonition-title {
-  background-color: rgba(246, 172, 180, 0.1);
+  background-color: rgba(255, 158, 100, 0.1);
   color: var(--ashbloom-pink);
 }
 
@@ -339,7 +339,7 @@
 }
 
 .md-typeset table:not([class]) tr:hover {
-  background-color: rgba(68, 191, 241, 0.05);
+  background-color: rgba(61, 214, 245, 0.05);
   transition: background-color 0.2s ease;
 }
 
@@ -367,7 +367,7 @@
 
 /* ===== FOOTER ===== */
 .md-footer {
-  background-color: #25282b !important; /* Charcoal directly */
+  background-color: #25282b !important;
 }
 
 .md-footer,
@@ -377,11 +377,11 @@
 }
 
 .md-footer a {
-  color: #44BFF1 !important; /* Sky directly */
+  color: var(--ashbloom-sky) !important;
 }
 
 .md-footer a:hover {
-  color: #F6ACB4 !important; /* Pink directly */
+  color: var(--ashbloom-pink) !important;
 }
 
 

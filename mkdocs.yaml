@@ -28,8 +28,12 @@ nav:
           - k3s-master: oci/03.k3s-master.md
 
   - Windows:
-      - Customizing Powershell: windows/custom-powershell.md
-      - HP DL 160 HDD Driver: windows/dl160-gen10-storage-drivers.md
+      - Overview: windows/01.index.md
+      - Customization Guide:
+          - Powershell: windows/02.custom-powershell.md
+      - Troubleshooting:
+          - HP DL 160 HDD Driver: windows/03.dl160-gen10-storage-drivers.md
+      
 
 # ===== THEME CONFIGURATION =====
 theme:

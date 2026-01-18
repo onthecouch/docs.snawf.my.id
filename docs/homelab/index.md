@@ -1,5 +1,7 @@
-# 🏠 Local Lab: PVE
+# Homelab Documentation
 
+
+---
 **Host:** `pve`  
 **Role:** Primary Hypervisor & Storage Node
 
